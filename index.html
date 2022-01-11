@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" id="site" class="nojs" style="touch-action: none">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        @font-face{
+            font-family: proximanova;
+            src: url(proximanova-reg-webfont.ttf) format("truetype");
+        }
+
+        @font-face{
+            font-family: proximanovabold;
+            src: url(proximanova-bold-webfont.ttf) format("truetype");
+        }
+
+        body{
+            font-family: proximanova;
+            margin: 0px;
+            background-color: black;
+        }
+
+        main{
+            max-width: 600px;
+            height: 100vh;
+            background-image: url("img/B2.jpg");
+            background-size: 100% 100%;
+            margin: auto;
+            position: relative;
+        }
+
+        .header{
+            height: 15vh;
+        }
+
+        .header img{
+            float: right;
+            height: 95%;
+        }
+
+        .top{
+            height: 30vh;
+            background-image: url("img/box.png");
+            background-size: 100% 100%;
+            color: white;
+        }
+
+        .top p{
+            padding: 50px;
+            font-size: 40px;
+            text-align: center;
+            margin: 0;
+
+        }
+
+        .button{
+            background-image: url("img/button_2.png");
+            background-size: 100% 100%;
+            cursor: pointer;
+            width: 185px;
+            height: 55px;
+            position: absolute;
+            top: 40%;
+            left: 35%;
+        }
+
+        .button p{
+            margin: 0;
+            padding: 5px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 2%;
+            color: white;
+            left: 35%;
+        }
+
+        .footer p{
+            margin: 0;
+            font-size: 20px;
+            font-family: proximanovabold;
+        }
+
+        @media only screen and (max-width: 700px) {
+                .header {
+                    height: 10vh;
+                }
+
+                main {
+                    height: 85vh;
+                }
+
+                .button {
+                    left: 30%;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <img src="img/logo.png"/>
+        </div>
+        <!--<div class="top">
+            <p>Play the game; finish it in 1 minute and get a chance to win exciting prize</p>
+        </div>-->
+        <div onclick="window.location.href='game.html'" class="button">
+        </div>
+        <!--<div class="footer">
+            <p>A new revolution</p>
+        </div>-->
+    </main>
+</body>
+</html>
